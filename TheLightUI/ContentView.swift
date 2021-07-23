@@ -14,6 +14,7 @@ struct ContentView: View {
         ZStack {
             isLightOn ? Color.white : Color.black
         }
+        .statusBar(hidden: true)
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onTapGesture {
             isLightOn.toggle()
